@@ -1,0 +1,25 @@
+.nav {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-right: 60px;
+        }
+    }
+    &__link {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        transition: all 0.3s ease-in-out;
+        &--active {
+            color: $main-color;
+        }
+        &:hover {
+            color: $main-color;
+        }
+    }
+}

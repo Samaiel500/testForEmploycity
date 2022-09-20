@@ -1,0 +1,49 @@
+.btn {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all .3s ease-in-out;
+    &--blue {
+        width: 183px;
+        height: 43px;
+        background: #3E9CDC;
+        border: 1px solid #FFFFFF;
+        color: #FFFFFF;
+        margin-right: 30px;
+        &:hover {
+            background: #FFFFFF;
+            color: #2A2B30;
+            border: 1px solid #6F6D7B;
+        }
+    }
+    &--light {
+        width: 183px;
+        height: 43px;
+        background: #FFFFFF;
+        border: 1px solid #6F6D7B;
+        color: #2A2B30;
+        &:hover {
+            background: #3E9CDC;
+            border: 1px solid #FFFFFF;
+            color: #FFFFFF;
+        }
+    }
+    &--form {
+        width: 100%;
+        height: 48px;
+        background: #3E9CDC;
+        border: 1px solid #FFFFFF;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        &:hover {
+            background: #FFFFFF;
+            color: #2A2B30;
+            border: 1px solid #6F6D7B;
+        }
+    }
+}

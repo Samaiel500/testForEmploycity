@@ -1,0 +1,93 @@
+.header {
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    min-height: 100px;
+    background: rgba(16, 16, 29, .9);
+    &__container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__logo {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 800;
+        font-size: 28px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        transition: all .3s ease-in-out;
+        span {
+            color: $main-color;
+            transition: all .3s ease-in-out;
+        }
+        &:hover {
+            color: $main-color;
+            & > span{
+                color: #FFFFFF;
+            }
+        }
+    }
+}
+
+.humburger {
+    display: none;
+    span {
+        display: block;
+        width: 30px;
+        height: 2px;
+        background: $main-color;
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+    position: relative;
+    z-index: 5;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background: $main-color;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 10px;
+    &:target {
+        display: block;
+    }
+    &__list {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    &__link {
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: black;
+        }
+    }
+}

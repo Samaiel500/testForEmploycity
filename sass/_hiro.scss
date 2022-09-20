@@ -1,0 +1,51 @@
+.hiro {
+    padding-top: 201px;
+    padding-bottom: 201px;
+    background: url(../img/hiro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__title {
+        max-width: 780px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 80px;
+        span {
+            color: $main-color;
+        }
+    }
+    &__spec {
+        margin-bottom: 80px;
+        max-width: 540px;
+    }
+    &__list-title {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin-bottom: 10px;
+    }
+    &__list-item {
+        position: relative;
+        padding-left: 10px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+        margin-bottom: 5px;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 4.94px;
+            height: 1.51px;
+            left: 0;
+            top: 12px;
+            background: #000000;
+        }
+    }
+}

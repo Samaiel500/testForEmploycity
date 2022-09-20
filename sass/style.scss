@@ -1,0 +1,48 @@
+@import "variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Raleway:wght@800&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  //font-family: 'Raleway', sans-serif;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  outline-color: $main-color;
+}
+
+a {
+  text-decoration: none;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+.list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import 'header';
+@import 'nav';
+@import 'hiro';
+@import 'btn';
+@import 'order';
+@import 'form';
+@import 'footer';
+
+@import 'media';

@@ -1,0 +1,115 @@
+.footer {
+    background: #3D4050;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    &__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+    &__rules {
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+    }
+    &__pay {
+        display: flex;
+        padding: 0 40px;
+        justify-content: space-between;
+        gap: 38px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #C3C3C3;
+        border-left: 1px solid #C3C3C3;
+        border-right: 1px solid #C3C3C3;
+        &-item {
+            padding-left: 30px;
+            position: relative;
+        }
+        &-qiwi {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: url(../icons/qiwi.svg);
+            }
+        }
+        &-yandex {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: url(../icons/yandex.svg);
+            }
+        }
+        &-web {
+            &::after {
+                content: '';
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: url(../icons/web.svg);
+            }
+        }
+    }
+    &__contacts {
+        display: flex;
+        gap: 38px;
+    }
+    &__link {
+        position: relative;
+        padding-left: 30px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #FFFFFF;
+        transition: all .3s ease-in-out;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__mail {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../icons/footer-mail.svg);
+        }
+    }
+    &__vk {
+        &::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background: url(../icons/vk.svg);
+        }
+    }
+}
+
